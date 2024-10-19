@@ -144,7 +144,7 @@ function UnitAura(unit, indexOrName, rank, filter)
 	local debuffType
 	if ((filter and filter:find("HARMFUL")) or ((rank and rank:find("HARMFUL")) and filter == nil)) then
 		debuffType = "HARMFUL";
-	elseif ((filter and filter:find("HELPFUL")) or ((rank and rank:find("HARMFUL")) and filter == nil)) then
+	elseif ((filter and filter:find("HELPFUL")) or ((rank and rank:find("HELPFUL")) and filter == nil)) then
 		debuffType = "HELPFUL";
 	else
 		debuffType = nil;
